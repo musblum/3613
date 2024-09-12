@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
@@ -9,10 +10,10 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="738.0" stylesheets="@../../../css/format.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.cst3613.SearchStockController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="842.0" stylesheets="@../../../css/format.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.cst3613.SearchStockController">
    <children>
-      <Label fx:id="lblTitle" layoutX="259.0" layoutY="14.0" text="Stock Search" />
-      <FlowPane fx:id="fpMarketCap" layoutX="45.0" layoutY="131.0" prefHeight="59.0" prefWidth="648.0">
+      <Label fx:id="lblTitle" layoutX="311.0" layoutY="32.0" text="Stock Search" />
+      <FlowPane fx:id="fpMarketCap" layoutX="97.0" layoutY="257.0" prefHeight="59.0" prefWidth="648.0">
          <children>
             <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" selected="true" text="All" textAlignment="CENTER">
                <font>
@@ -74,7 +75,7 @@
             </RadioButton>
          </children>
       </FlowPane>
-      <FlowPane fx:id="fpStocks" layoutX="45.0" layoutY="208.0" prefHeight="263.0" prefWidth="648.0">
+      <FlowPane fx:id="fpStocks" layoutX="97.0" layoutY="334.0" prefHeight="263.0" prefWidth="648.0">
          <children>
             <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
             <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
@@ -149,7 +150,7 @@
             <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
          </children>
       </FlowPane>
-      <AnchorPane layoutX="87.0" layoutY="63.0" prefHeight="59.0" prefWidth="566.0">
+      <AnchorPane layoutX="139.0" layoutY="82.0" prefHeight="59.0" prefWidth="566.0">
          <children>
             <Label layoutX="14.0" layoutY="21.0" text="Stock Prices between" />
             <TextField layoutX="139.0" layoutY="17.0" />
@@ -157,9 +158,27 @@
             <Label layoutX="319.0" layoutY="22.0" text="and" />
          </children>
       </AnchorPane>
-      <Label layoutX="45.0" layoutY="114.0" text="Market Cap" />
-      <Label fx:id="lblRowCount" layoutX="562.0" layoutY="561.0" prefHeight="17.0" prefWidth="107.0" text="Row count is 77" />
-      <Button layoutX="310.0" layoutY="556.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="133.0" text="Search" />
-      <Label layoutX="45.0" layoutY="553.0" text="Devloper: Abdallah Salem" />
+      <Label layoutX="97.0" layoutY="240.0" text="Market Cap" />
+      <Label fx:id="lblRowCount" layoutX="614.0" layoutY="687.0" prefHeight="17.0" prefWidth="107.0" text="Row count is 77" />
+      <Button layoutX="362.0" layoutY="682.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="133.0" text="Search" />
+      <Label layoutX="97.0" layoutY="679.0" text="Devloper: Abdallah Salem" />
+      <FlowPane layoutX="98.0" layoutY="138.0" prefHeight="92.0" prefWidth="641.0">
+         <children>
+            <!-- Developer: Abdallah, Salem -->
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="All" userData="0" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Jan" userData="1" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Feb" userData="2" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Mar" userData="3"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Apr" userData="4"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="May" userData="5"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Jun" userData="6"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Jul" userData="7"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Aug" userData="8"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Sep" userData="9"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Oct" userData="10"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Nov" userData="11"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Dec" userData="12"/>
+         </children>
+      </FlowPane>
    </children>
 </AnchorPane>
