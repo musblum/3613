@@ -162,22 +162,22 @@
       <Label fx:id="lblRowCount" layoutX="614.0" layoutY="687.0" prefHeight="17.0" prefWidth="107.0" text="Row count is 77" />
       <Button layoutX="362.0" layoutY="682.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="133.0" text="Search" />
       <Label layoutX="97.0" layoutY="679.0" text="Devloper: Abdallah Salem" />
-      <FlowPane layoutX="98.0" layoutY="138.0" prefHeight="92.0" prefWidth="641.0">
+      <FlowPane fx:id="fpMonths" layoutX="98.0" layoutY="138.0" prefHeight="92.0" prefWidth="641.0">
          <children>
             <!-- Developer: Abdallah, Salem -->
             <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="All" userData="0" />
             <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Jan" userData="1" />
             <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Feb" userData="2" />
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Mar" userData="3"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Apr" userData="4"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="May" userData="5"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Jun" userData="6"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Jul" userData="7"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Aug" userData="8"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Sep" userData="9"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Oct" userData="10"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Nov" userData="11"/>
-            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Dec" userData="12"/>
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Mar" userData="3" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Apr" userData="4" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="May" userData="5" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Jun" userData="6" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Jul" userData="7" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Aug" userData="8" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Sep" userData="9" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Oct" userData="10" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Nov" userData="11" />
+            <CheckBox mnemonicParsing="false" onAction="#monthSelections" text="Dec" userData="12" />
          </children>
       </FlowPane>
    </children>

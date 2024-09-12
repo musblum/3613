@@ -20,7 +20,10 @@
     -fx-vgap: 1.5px;
 
 }
-
+.month-color{
+    
+    -fx-background-color: pink;
+}
 #fpStocks .label, #lblRowCount{
     -fx-border-color: black;
     -fx-border-style: solid;
