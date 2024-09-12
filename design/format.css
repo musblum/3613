@@ -1,0 +1,30 @@
+#lblTitle{
+    
+    -fx-font-size: 30pt
+
+
+}
+
+.radio{
+
+-fx-min-width: 1.5in;
+
+}
+
+#fpMarketCap{
+    -fx-vgap: .05in;
+}
+
+#fpStocks{
+    -fx-hgap: 1.5px;
+    -fx-vgap: 1.5px;
+
+}
+
+#fpStocks .label, #lblRowCount{
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-min-width: 1.1in;
+    -fx-padding: 3px;
+}

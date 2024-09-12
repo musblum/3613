@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="738.0" stylesheets="@../../../css/format.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.cst3613.SearchStockController">
+   <children>
+      <Label fx:id="lblTitle" layoutX="259.0" layoutY="14.0" text="Stock Search" />
+      <FlowPane fx:id="fpMarketCap" layoutX="45.0" layoutY="131.0" prefHeight="59.0" prefWidth="648.0">
+         <children>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" selected="true" text="All" textAlignment="CENTER">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgMarketCap" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="0 - 100M" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="1">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="100M - 500M" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="2">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="500M- 1B" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="3">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="1B - 30B" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="4">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="30B - 200B" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="5">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="200B - 500B" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="6">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="500B - 750B" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="7">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="750B - 999B" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="8">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="999B - 2T" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="9">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#selectMarketcap" text="2T - 36T" textAlignment="CENTER" toggleGroup="$tgMarketCap" userData="10">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </FlowPane>
+      <FlowPane fx:id="fpStocks" layoutX="45.0" layoutY="208.0" prefHeight="263.0" prefWidth="648.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Stock 1" />
+         </children>
+      </FlowPane>
+      <AnchorPane layoutX="87.0" layoutY="63.0" prefHeight="59.0" prefWidth="566.0">
+         <children>
+            <Label layoutX="14.0" layoutY="21.0" text="Stock Prices between" />
+            <TextField layoutX="139.0" layoutY="17.0" />
+            <TextField layoutX="360.0" layoutY="17.0" />
+            <Label layoutX="319.0" layoutY="22.0" text="and" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="45.0" layoutY="114.0" text="Market Cap" />
+      <Label fx:id="lblRowCount" layoutX="562.0" layoutY="561.0" prefHeight="17.0" prefWidth="107.0" text="Row count is 77" />
+      <Button layoutX="310.0" layoutY="556.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="133.0" text="Search" />
+      <Label layoutX="45.0" layoutY="553.0" text="Devloper: Abdallah Salem" />
+   </children>
+</AnchorPane>
