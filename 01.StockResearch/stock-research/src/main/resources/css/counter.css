@@ -1,0 +1,23 @@
+#fpNumbers .label{
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-min-width: .8in;
+    -fx-padding:2px;
+    -fx-alignment: center;
+}
+
+#lblCountBy{
+    -fx-font-size: 40pt;
+}
+
+#fpNumbers{
+    -fx-vgap: .04in;
+    -fx-hgap: .04in;
+    -fx-padding: 6px;
+    -fx-border-color: black;
+}
+
+#tvCounter{
+    -fx-border-color: black;
+}

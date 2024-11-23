@@ -31,3 +31,10 @@
     -fx-min-width: 1.1in;
     -fx-padding: 3px;
 }
+
+
+#fpMonths .check-box{
+    -fx-border-width: 1px;
+    -fx-min-width: 1.1in;
+    -fx-padding: 3px;
+}

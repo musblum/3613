@@ -16,11 +16,12 @@ public class App extends Application {
     private static Scene scene;
 
     @Override
-    public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("SearchStocks"));
+    public void start(@SuppressWarnings("exports") Stage stage) throws IOException {
+        scene = new Scene(loadFXML("CounterTreeView"));
         stage.setScene(scene);
         stage.setTitle("Abdallah, Salem " + new java.util.Date());  
         stage.show();
+        
     }
 
     static void setRoot(String fxml) throws IOException {
