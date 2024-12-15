@@ -1,23 +1,21 @@
 package edu.citytech.counter;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import edu.citytech.counter.dto.EnergyStock;
-import edu.citytech.counter.services.EnergyStockService;
+import edu.citytech.counter.dto.Stock;
+import edu.citytech.counter.services.StockService;
 
 public class T2_EnergyStocks {
 
     @Test
     void t1(){
 
-        System.out.println(System.getenv("CST_3613_DATA"));
-        EnergyStockService service = new EnergyStockService();
+        StockService service = new StockService();
         int actual = service.size();
-        int expected = 232;
+        int expected = 482;
 
         assertEquals(expected, actual);
 
@@ -26,10 +24,10 @@ public class T2_EnergyStocks {
     @Test
     void t2(){
 
-        EnergyStockService service = new EnergyStockService();
-        List<EnergyStock> list = service.getDividendStocks();
+        StockService service = new StockService();
+        List<Stock> list = service.getDividendStocks();
         int actual = list.size();
-        int expected = 150;
+        int expected = 299;
 
         assertEquals(expected, actual);
 
@@ -38,10 +36,21 @@ public class T2_EnergyStocks {
     @Test
     void t3(){
 
-        EnergyStockService service = new EnergyStockService();
-        List<EnergyStock> list = service.getMarketCapInBillions();
+        StockService service = new StockService();
+        List<Stock> list = service.getMarketCapInBillions();
         int actual = list.size();
-        int expected = 150;
+        int expected = 330;
+
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void t4(){
+
+        StockService service = new StockService();
+        int actual = service.filter(15).size();
+        int expected = 482;
 
         assertEquals(expected, actual);
 

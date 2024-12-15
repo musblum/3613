@@ -11,13 +11,13 @@ import javafx.stage.Stage;
 /**
  * JavaFX App
  */
-public class App extends Application {
+public class App extends Application { 
 
     private static Scene scene;
 
     @Override
     public void start(@SuppressWarnings("exports") Stage stage) throws IOException {
-        scene = new Scene(loadFXML("CounterTreeView"));
+        scene = new Scene(loadFXML("StockTreeView"));
         stage.setScene(scene);
         stage.setTitle("Abdallah, Salem " + new java.util.Date());  
         stage.show();
